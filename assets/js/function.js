@@ -52,7 +52,7 @@ function getFilm(filme) {
     //faz consulta a api publica do OMDBAPI, utilizando ajax
     $.ajax({
         type: "GET",
-        url: "http://www.omdbapi.com/?t=" + encodeURIComponent(filme) +'&apikey=71e48b89',
+        url: "http://www.omdbapi.com/?t=" + encodeURIComponent(filme) +'&apikey=',
         dataType: 'json',
         beforeSend: function(response) {  
 
