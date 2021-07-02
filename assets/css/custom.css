@@ -1,0 +1,37 @@
+html, body { height: 100% }
+
+.btn {
+  background-color:  #48F2E3;
+  opacity: 85%;
+  cursor:pointer;
+}
+
+textarea{
+  opacity: 65%;
+}
+
+.result{
+  background-color: black;
+  color: whitesmoke;
+  opacity: 85%;
+}
+
+
+.legenda{
+  color: white;
+  opacity: 85%;
+}
+
+.background {
+  background-image: url('https://i.pinimg.com/originals/61/a9/09/61a909527265ffe139927a50eb004c6a.jpg');
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.oculto {
+  display: none;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sorteador de Filmes</title>
+
+	<!--CSS-->
+	<link rel="stylesheet" href="assets/css/custom.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<canvas class="background"></canvas>
+
+	<div class="container">
+
+		<div class="row justify-content-center">
+
+			<div class="col-sm-7 mt-4">
+
+				<h1 class="text-center text-white">Sorteador de Filmes</h1>
+
+				<div class="form-outline">
+					
+				 	<textarea class="form-control" id="filmes" name="filmes" rows="6"></textarea>
+
+				</div>
+
+				<button class="btn btn-block mt-2" id="sortear">Sortear</button>
+
+				<div class="col-sm-12 text-center text-white mt-2">
+
+					<div id="result" class="result oculto">
+
+						<img src="assets/img/Spinner-0.9s-257px.svg" id="carregando" class="oculto">
+
+						<div id="sort" class="legenda"></div>
+
+						<img src="" id="imgFilme" class="img-fluid">
+
+						<div id="Title" class="legenda"></div>
+
+					</div>		
+
+				</div>
+
+			</div>
+			
+		</div>
+
+	</div>
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="assets/js/bootstrap-notify.js"></script>
+	<script src="assets/js/function.js"></script>
+
+	<!-- fim verificação -->
+
+	<!-- Particles -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+		  Particles.init({
+		    selector: '.background',
+		    maxParticles: 300,
+		    color: ['#f9f9f9', '#48F2E3', '#f9f9f9'],
+		  });
+		};
+	</script>
+	<!-- ./Particles -->
+
+</body>
+</html>
